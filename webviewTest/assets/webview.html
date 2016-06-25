@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	<!-- 向一个div中写上一句话-->
+	function htmlMethod(a){
+		var div = document.getElementById('content');
+		div.innerHTML = div.innerHTML + a + '<br/>';
+	}
+</script>
+</head>
+<body>
+	这是一个本地的HTML页面<br/>
+	<a href="tel:123456">
+	<img src="images/1.png"/>
+	</a><br/>
+	
+	<a href="javascript:plugin.call('900000');">直接调用Android的方法</a><br/>
+	
+	<div id="content">
+	sjklk
+	</div>
+</body>
+</html>
